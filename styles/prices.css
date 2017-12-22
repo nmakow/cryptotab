@@ -1,0 +1,94 @@
+html, body, h1, h2, h3, h4, h5, h6, p, div {
+  padding: 0;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  background-color: none;
+}
+
+.content canvas {
+  position: fixed;
+  background-color: #004600;
+  z-index: -1;
+}
+
+#summaries {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: none;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  background-color: none;
+  color: white;
+  margin: 20px 5%;
+}
+
+.currencySummary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+  border: 1px solid #505050;
+  border-radius: 10px;
+  background-color: #efefef;
+  width: 300px;
+  margin: 15px;
+}
+
+.shadowbox {
+  box-shadow: 0px 0px 20px #4f4f4f;
+}
+
+.currencySummary:hover {
+  box-shadow: 0px 0px 50px #afafaf;
+}
+
+.summaryMainInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.summaryPercentages {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 10px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  padding: 5px;
+}
+
+.positive {
+  color: green
+}
+
+.negative {
+  color: red
+}
+
+.summaryOtherInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+}
